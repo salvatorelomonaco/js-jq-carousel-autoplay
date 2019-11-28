@@ -1,0 +1,164 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Helvetica; cursor: default;}
+
+body {
+    background-color: #303030;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+header img {
+    margin-top: 10px;
+    height: 110px;
+    width: 335px;
+}
+
+hr {
+    margin-top: 5px;
+    width: 490px;
+    height: 4px;
+    background-color: #ff7a59;
+    border: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-right: -10px;
+    color: #dedfe0;
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+}
+
+.container-img {
+    margin: 20px auto 0 auto;
+    height: 420px;
+    width: 1050px;
+    position: relative;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .90);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #dedfe0;
+    padding: 0 90px;
+    cursor: default;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.fa-quote-left {
+    align-self: flex-start;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.fa-quote-right {
+    align-self: flex-end;
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #ff7a59;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #dedfe0;
+    cursor: pointer;
+}
+
+.container-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.container-img img.active {
+    display: block;
+}
+
+.left, .right {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .20);
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left {
+    top: 0;
+    left: 0;
+}
+
+.right {
+    top: 0;
+    right: 0;
+}
+
+.right i, .left i{
+    font-size: 40px;
+    cursor: pointer;
+    transition: .4s;
+    color: #303030;
+}
+
+.right:hover i, .left:hover i {
+    transform: scale(1.2) ;
+}
+
+.bullets {
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bullets i {
+    color: rgba(255, 255, 255, .80);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bullets i.active {
+    color: #ff7a59;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #dedfe0;
+    margin-top: 20px;
+}
